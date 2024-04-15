@@ -1,0 +1,62 @@
+.background {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    animation: 20s linear 0s normal none infinite running rot;
+    -webkit-animation: 20s linear 0s normal none infinite running rot;
+
+    .elipse {
+        border-radius: 50%;
+        width: 80%;
+        height: 80%;
+        filter: blur(120px);
+        animation: 20s linear 0s normal none infinite running rot;
+        -webkit-animation: 20s linear 0s normal none infinite running rot;
+    }
+
+    .elipse1 {
+        opacity: 0.5;
+        rotate: 65.41deg;
+        background: #B2F1DE;
+    }
+    
+    .elipse2 {
+
+        opacity: 0.15;
+        rotate: 114.59deg;
+        background-color: #3AC922;
+    }
+    
+    .elipse3 {
+        opacity: 0.15;
+        rotate: 65.41deg;
+        background-color: #3AC922;
+    }
+    
+    .elipse4 {
+        opacity: 0.5;
+        rotate: 131.25deg;
+        background-color: #B2F1DE;
+    }
+}
+
+@keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
