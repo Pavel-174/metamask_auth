@@ -1,0 +1,33 @@
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .header__logo {
+        z-index: 2;
+        width: 148.16px;
+        height: 24.17px;
+    }
+
+    .header__button {
+        z-index: 2;
+        position: fixed;
+        right: 70px;
+        width: 200px;
+        height: 48px;
+        padding: 12px 32px 12px 32px;
+        border-radius: 8px;
+        box-shadow: 0px 8px 16px 0px rgba(8, 216, 153, 0.2);
+        background-color: rgba(8, 216, 153, 1);
+        color: rgba(255, 255, 255, 1);
+        //styleName: Btns,Link/Btn L;
+        font-family: Manrope;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+}

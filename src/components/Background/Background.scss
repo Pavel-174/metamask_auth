@@ -1,4 +1,5 @@
 .background {
+    position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -8,6 +9,7 @@
     justify-items: center;
     animation: 20s linear 0s normal none infinite running rot;
     -webkit-animation: 20s linear 0s normal none infinite running rot;
+    background-color: transparent;
 
     .elipse {
         border-radius: 50%;

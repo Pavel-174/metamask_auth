@@ -1,16 +1,14 @@
 import './App.css';
 import Background from './components/Background/Background';
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
 
 function App() {
   return (
     <div className="App">
       <Background />
-      <header className="App-header">
-
-      </header>
-      <main>
-
-      </main>
+      <Header />
+      <Main />
       <footer>
 
       </footer>
