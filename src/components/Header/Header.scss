@@ -21,7 +21,6 @@
         box-shadow: 0px 8px 16px 0px rgba(8, 216, 153, 0.2);
         background-color: rgba(8, 216, 153, 1);
         color: rgba(255, 255, 255, 1);
-        //styleName: Btns,Link/Btn L;
         font-family: Manrope;
         font-size: 18px;
         font-weight: 700;
@@ -37,5 +36,47 @@
         right: 70px;
         z-index: 2;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        margin-left: 70px;
+    }
+
+    .header__button {
+        position: unset;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header {
+        height: 69px;
+    
+        .header__logo {
+            width: 98px;
+            height: 15.98px;
+            margin-left: 20px;        
+        }
+    
+        .header__button {
+            width: fit-content;
+            height: 36px;
+            padding: 8px 16px 8px 16px;
+            right: 20px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: center;
+        }
+    
+        .header__disconnect {
+            right: 20px;
+        }
     }
 }
