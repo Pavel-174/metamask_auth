@@ -14,8 +14,7 @@ root.render(
         dappMetadata: {
           name: "Example React Dapp",
           url: window.location.href,
-        },
-        infuraAPIKey: process.env.INFURA_API_KEY,
+        }
       }}
     >
       <App />

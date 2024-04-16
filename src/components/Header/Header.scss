@@ -30,4 +30,12 @@
         border: none;
         cursor: pointer;
     }
+
+    .header__disconnect {
+        display: flex;
+        position: fixed;
+        right: 70px;
+        z-index: 2;
+        cursor: pointer;
+    }
 }

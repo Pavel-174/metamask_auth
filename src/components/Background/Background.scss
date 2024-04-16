@@ -10,12 +10,13 @@
     animation: 20s linear 0s normal none infinite running rot;
     -webkit-animation: 20s linear 0s normal none infinite running rot;
     background-color: transparent;
+    z-index: 0;
 
     .elipse {
         border-radius: 50%;
         width: 80%;
         height: 80%;
-        filter: blur(120px);
+        filter: blur(90px);
         animation: 20s linear 0s normal none infinite running rot;
         -webkit-animation: 20s linear 0s normal none infinite running rot;
     }
