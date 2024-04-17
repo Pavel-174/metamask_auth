@@ -1,6 +1,6 @@
 .footer {
     background-color: rgba(240, 245, 245, 1);
-    height: 221px;
+    min-height: 221px;
     position: relative;
     z-index: 2;
     border-top: 1px solid rgba(205, 210, 221, 1);
@@ -56,6 +56,7 @@
     .footer__social {
         display: flex;
         flex-direction: row;
+        align-items: center;
         margin-top: 68px;
         gap: 30px;
         height: fit-content;
@@ -72,7 +73,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 280px;
+        min-height: 280px;
 
         .footer__logo-mobile {
             display: block;
@@ -103,6 +104,68 @@
             line-height: 22px;
             text-align: center;
             color: rgba(149, 149, 150, 1);
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 356px;
+        padding: 0 45px 0 45px;
+    
+        .footer__logo-mobile {
+            display: block;
+            width: 120px;
+            height: 19.98px;
+            margin: 50px 0 60px 0;
+        }
+    
+        .footer__links {
+            margin-top: 0;
+            height: 80px;
+            justify-content: space-between;
+    
+            .footer__link {
+                font-family: Gilroy;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 16px;
+                text-align: left;
+                text-decoration: none;
+                color: rgba(103, 103, 103, 1);
+            }
+        }
+    
+        .footer__main {
+            display: none;
+        }
+    
+        .footer__social {
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            gap: 30px;
+            height: fit-content;
+
+            a {
+                img { 
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    
+        .footer__copyright-mobile {
+            display: block;
+            font-family: Gilroy;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: center;
         }
     }
 }

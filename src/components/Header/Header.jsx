@@ -5,11 +5,20 @@ import metamask from '../../img/metamask.svg'
 import logout from '../../img/disconnect.svg'
 import { useSDK } from "@metamask/sdk-react";
 import { cutAddress } from '../../utils/support';
+import { useSelector, useDispatch } from 'react-redux';
+import { setAccount } from '../../redux/account/account';
 
 function Header() {
+    const dispatch = useDispatch();
+    const { account } = useSelector((state) => state.account);
+    const { sdk, connected } = useSDK();
     const wallet = localStorage.getItem('account');
-    const [account, setAccount] = useState(wallet);
-    const { sdk, connected, connecting, provider, chainId } = useSDK();
+
+    useEffect(() => {
+        if (wallet) {
+            dispatch(setAccount(wallet))
+        }
+    }, [wallet]);
 
     const addNetwork = () => {
         const params = [{
@@ -51,7 +60,7 @@ function Header() {
             console.log(signResult)
             localStorage.setItem('account', accounts?.[0]);
             localStorage.setItem('sign', signResult);
-            setAccount(accounts?.[0]);
+            dispatch(setAccount(accounts?.[0]));
             await changeNetwork();
             addNetwork();
 
