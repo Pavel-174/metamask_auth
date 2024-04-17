@@ -10,6 +10,11 @@ import youtube from '../../img/youtube.svg'
 function Footer() {
     return (
         <footer className="footer">
+            <img 
+                className='footer__logo-mobile'
+                src={logo}
+                alt='logo'
+            />
             <div className='footer__links'>
                 <a className='footer__link' href='#'>Privacy Policy</a>
                 <a className='footer__link' href='#'>Terms & Conditions</a>
@@ -26,33 +31,30 @@ function Footer() {
             <div className='footer__social'>
                 <a className='footer__link' href='#'>
                     <img 
-                        className='footer__logo'
                         src={facebook}
                         alt='facebook'
                     />
                 </a>
                 <a className='footer__link' href='#'>
                     <img 
-                        className='footer__logo'
                         src={twitter}
                         alt='twitter'
                     />
                 </a>
                 <a className='footer__link' href='#'>
                     <img 
-                        className='footer__logo'
                         src={youtube}
                         alt='youtube'
                     />
                 </a>
                 <a className='footer__link' href='#'>
                     <img 
-                        className='footer__logo'
                         src={instagram}
                         alt='instagram'
                     />
                 </a>
             </div>
+            <span className='footer__copyright-mobile'>©2022 All rights reserved. Powered by Atla</span>
         </footer>
     );
 }

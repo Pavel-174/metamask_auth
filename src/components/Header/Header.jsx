@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Header.scss';
 import logo from "../../img/LOGO.svg";
+import metamask from '../../img/metamask.svg'
+import logout from '../../img/disconnect.svg'
 import { useSDK } from "@metamask/sdk-react";
 import { cutAddress } from '../../utils/support';
 
@@ -80,9 +82,22 @@ function Header() {
                 Connect Wallet
             </button>
             }
-            {connected && (
+            { (connected && account) && (
                 <div>
-                    <button className='header__disconnect' onClick={() => disconnect()}>{cutAddress(account)}</button>
+                    <button 
+                        className='header__disconnect' 
+                        onClick={() => disconnect()}
+                    >
+                        <img 
+                            src={metamask}
+                            alt='metamask logo'
+                        />
+                        {cutAddress(account)}
+                        <img 
+                            src={logout}
+                            alt='disconnect'
+                        />
+                </button>
                 </div>
             )}
         </header>

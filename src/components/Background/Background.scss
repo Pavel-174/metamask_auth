@@ -1,5 +1,5 @@
 .background {
-    position: absolute;
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -16,7 +16,7 @@
         border-radius: 50%;
         width: 80%;
         height: 80%;
-        filter: blur(60px);
+        filter: blur(20px);
         animation: 20s linear 0s normal none infinite running rot;
         -webkit-animation: 20s linear 0s normal none infinite running rot;
     }
