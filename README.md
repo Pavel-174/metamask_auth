@@ -1,4 +1,4 @@
-# Проект sfxdx
+# Проект metamask_auth
 
 ## Getting Started
 
